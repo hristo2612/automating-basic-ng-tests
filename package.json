@@ -1,0 +1,24 @@
+{
+  "name": "automate-tests",
+  "version": "1.0.0",
+  "description": "Purpose here is to automate, refactoring of initial Angular tests ( will be used for work )",
+  "main": "auto.js",
+  "scripts": {
+    "start": "node auto",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hristo2612/automating-basic-ng-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hristo2612/automating-basic-ng-tests/issues"
+  },
+  "homepage": "https://github.com/hristo2612/automating-basic-ng-tests#readme",
+  "dependencies": {
+    "read-file": "^0.2.0"
+  }
+}
