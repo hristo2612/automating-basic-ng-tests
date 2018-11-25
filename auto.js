@@ -1,7 +1,8 @@
-const read = require('read-file');
 const path = require('path');
+const read = require('./utils/readFile');
+const write = require('./utils/writeFile');
 
-let contents = read.sync(path.resolve('C://Users/Hristo/Github/angular-fundamentals/src/app/product-list', 'product-list.component.ts'), 'utf8');
+let contents = read.readFile(path.resolve('C://Users/Hristo/Github/angular-fundamentals/src/app/product-list', 'product-list.component.ts'));
 
 // Get constructor dependencies
 
