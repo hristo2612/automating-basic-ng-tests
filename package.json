@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/hristo2612/automating-basic-ng-tests#readme",
   "dependencies": {
-    "read-file": "^0.2.0"
+    "read-file": "^0.2.0",
+    "write": "^1.0.3"
   }
 }
