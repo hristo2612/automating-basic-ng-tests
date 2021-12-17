@@ -1,6 +1,6 @@
 module.exports = {
     main: `
-    import { async, TestBed } from '@angular/core/testing';
+    import { waitForAsync, TestBed } from '@angular/core/testing';
     $IMPORTS
     
     $COMPONENT_IMPORT
@@ -11,7 +11,7 @@ module.exports = {
     
       describe('as unit', () => {
     
-        beforeEach(async(() => {
+        beforeEach(waitForAsync(() => {
           TestBed.configureTestingModule({
             providers: [
               $COMPONENT_UNDER_TEST,
@@ -38,6 +38,6 @@ module.exports = {
     },
     `,
     variable: `let $INSTANCE_NAME: any;`,
-    variableAssign: `$INSTANCE_NAME = TestBed.get($DEPENDENCY_NAME);`
+    variableAssign: `$INSTANCE_NAME = TestBed.inject($DEPENDENCY_NAME);`
 
 }
