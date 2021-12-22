@@ -61,9 +61,9 @@ function variables(content, dependencies) {
                               .replace('$DEPENDENCY_NAME', dep)
             );
         });
-        return newContent.replace('$VARIABLES', variables.join('\n')).replace('$VARIABLES_ASSIGN', assignedVariables.join('\n'));
+        return newContent.replace('$VARIABLES', variables.join('\n')).replaceAll('$VARIABLES_ASSIGN', assignedVariables.join('\n'));
     } else {
-        return newContent.replace('$VARIABLES', '').replace('$VARIABLES_ASSIGN', '');
+        return newContent.replace('$VARIABLES', '').replaceAll('$VARIABLES_ASSIGN', '');
     }
 }
 
